@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: registry.germainleignel.com/personal/demo-app:latest
+        image: registry.germainleignel.com/personal/demo-app:latest # {"$imagepolicy": "flux-system:demo-app"}
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
